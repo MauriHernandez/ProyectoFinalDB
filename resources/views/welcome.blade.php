@@ -48,7 +48,36 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{url('recetas')}}">Recetas</a>
             </li>
-            <a href="/backup" class="btn btn-primary">Crear Backup</a>
+                      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Vistas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{url('/vistas/vista1')}}">Pacientes y Doctores</a></li>
+            <li><a class="dropdown-item" href="{{url('/vistas/vista2')}}">Pacientes y Recetas</a></li>
+            <li><a class="dropdown-item" href="{{url('/vistas/vista3')}}">Doctores y Recetas</a></li>
+            <li><a class="dropdown-item" href="{{url('/vistas/vista4')}}">Pacientes y Apoyos</a></li>
+            <li><a class="dropdown-item" href="{{url('/vistas/vista5')}}"> Doctores, pacientes y Recetas</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Consultas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{url('/consultas/consulta1')}}">Usuario-Tipo de perfil</a></li>
+            <li><a class="dropdown-item" href="{{url('/consultas/consulta2')}}">Doctor-Paciente</a></li>
+            <li><a class="dropdown-item" href="{{url('/vistas/vista3')}}">Paciente-Doctor</a></li>
+          </ul>
+        </li>
+
+
+            <a href="{{ url('/backup') }}" class="btn btn-primary">Crear Backup</a>
+          
+        
+
 
 
             
@@ -81,6 +110,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">

@@ -42,7 +42,7 @@ return [
                 'ignore_unreadable_directories' => false,
 
                 /*
-                 * This path is used to make directories in resulting zip-file relative
+                 * This path is used to make directories in resulting -file relative
                  * Set to `null` to include complete absolute path
                  * Example: base_path()
                  */
@@ -146,7 +146,7 @@ return [
              * The disk names on which the backups will be stored.
              */
             'disks' => [
-                'local',
+                'local/backup',
             ],
         ],
 

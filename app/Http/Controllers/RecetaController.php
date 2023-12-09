@@ -67,7 +67,7 @@ return redirect()-> back();
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Receta $receta)
+    public function update(Request $request,  $id)
     {
         $recetas=  Receta::find($id);
         $recetas-> id_paciente = $request-> input('id_paciente');
@@ -82,7 +82,7 @@ return redirect()-> back();
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Receta $receta)
+    public function destroy($id)
     {
         $recetas = Receta::find($id);
         $recetas-> delete();

@@ -4,7 +4,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Editar Perfil</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Editar Cita</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -21,7 +21,7 @@
 
                         <option value="{{$paciente->id}}"selected >{{$paciente->numero_ambulatorio}}</option>
                         @else
-                        <option value="{{$paciente->id}}">{{$paciente->ambulatorio}}</option>
+                        <option value="{{$paciente->id}}">{{$paciente->nombre}}</option>
                         @endif
                         @endforeach
                     </select> 
